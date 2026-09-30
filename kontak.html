@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <nav class="navbar">
       <div class="nav-brand">Rongawi</div>
@@ -24,11 +25,8 @@
       </ul>
     </nav>
 
-    <div class="container">
-      <section
-        class="info-section"
-        style="background-color: var(--accent-yellow)"
-      >
+    <main class="container">
+      <section class="info-section contact-section">
         <div class="section-header">
           <h2>Hubungi Kami</h2>
           <p class="section-desc">
@@ -36,28 +34,56 @@
             untuk menghubungi Restoran Rongawi!
           </p>
         </div>
-        <div style="font-size: 1.1rem; font-weight: 600; line-height: 1.8">
-          <p><strong>Alamat:</strong> Jl. Merdeka No. 10, Jakarta, Indonesia</p>
-          <p><strong>Telepon / WhatsApp:</strong> +62 823-8270-5059</p>
-          <p><strong>Email:</strong> info@restoranrongawi.com</p>
-          <p>
-            <strong>Jam Operasional:</strong> Setiap Hari (10.00 - 22.00 WIB)
-          </p>
-        </div>
+
+        <table class="contact-table">
+          <tr>
+            <th>Informasi</th>
+            <th>Detail</th>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>Jl. Merdeka No. 10, Jakarta, Indonesia</td>
+          </tr>
+          <tr>
+            <td>Telepon / WhatsApp</td>
+            <td>+62 823-8270-5059</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>info@restoranrongawi.com</td>
+          </tr>
+          <tr>
+            <td>Jam Operasional</td>
+            <td>Setiap Hari (10.00 - 22.00 WIB)</td>
+          </tr>
+        </table>
+
+        <table class="promo-table contact-promo">
+          <tr>
+            <th>Reservasi</th>
+            <th>Promo Reservasi</th>
+          </tr>
+          <tr>
+            <td>Hubungi kami sebelum datang untuk reservasi meja.</td>
+            <td>Reservasi rombongan dapat menanyakan paket keluarga kepada staf.</td>
+          </tr>
+        </table>
       </section>
-    </div>
+    </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>Restoran Rongawi</h2>
-          <p>Jl. Merdeka No. 10, Jakarta, Indonesia</p>
-        </div>
-        <div class="footer-meta">
-          <p class="copyright">&copy; 2026 Restoran Rongawi.</p>
-          <p>Good Food, Good Times.</p>
-        </div>
-      </div>
+      <table class="footer-table">
+        <tr>
+          <td class="footer-brand">
+            <h2>Restoran Rongawi</h2>
+            <p>Jl. Merdeka No. 10, Jakarta, Indonesia</p>
+          </td>
+          <td class="footer-meta">
+            <p class="copyright">&copy; 2026 Restoran Rongawi.</p>
+            <p>Good Food, Good Times.</p>
+          </td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>

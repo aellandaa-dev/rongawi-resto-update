@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- Menu Navigasi -->
     <nav class="navbar">
       <div class="nav-brand">Rongawi</div>
       <ul class="nav-links">
@@ -26,43 +25,88 @@
       </ul>
     </nav>
 
-    <!-- Header / Hero Section dengan Layout Berdampingan (Deskripsi + Video Autoplay) -->
     <header class="hero" id="home">
       <div class="hero-overlay"></div>
-      <div class="hero-container">
-        <!-- Kotak Deskripsi Resto -->
-        <div class="hero-content">
-          <span class="subtitle">Good Vibes & Great Food</span>
-          <h1>Restoran Rongawi</h1>
-          <p class="intro">
-            Membawa Anda kembali ke masa keemasan kuliner. Nikmati sajian
-            autentik kami dengan suasana nostalgia yang hangat, asyik, dan penuh
-            warna!
+      <table class="layout-table hero-table">
+        <tr>
+          <td class="hero-content-cell">
+            <div class="hero-content">
+              <span class="subtitle">Good Vibes & Great Food</span>
+              <h1>Restoran Rongawi</h1>
+              <p class="intro">
+                Membawa Anda kembali ke masa keemasan kuliner. Nikmati sajian
+                autentik kami dengan suasana nostalgia yang hangat, asyik, dan penuh
+                warna!
+              </p>
+            </div>
+          </td>
+          <td class="hero-video-cell">
+            <div class="hero-video-wrapper">
+              <video autoplay muted loop playsinline>
+                <source src="video_menu_resto.mp4" type="video/mp4" />
+                Maaf, browser Anda tidak mendukung pemutaran video.
+              </video>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <main class="container">
+      <section class="promotion-section">
+        <div class="section-header">
+          <h2>Promo & Paket Nostalgia</h2>
+          <p class="section-desc">
+            Pilihan promo untuk membuat waktu makan bersama semakin seru.
           </p>
         </div>
 
-        <!-- Kotak Video Cuplikan Dapur (Autoplay & Loop) -->
-        <div class="hero-video-wrapper">
-          <video autoplay muted loop playsinline>
-            <source src="video_menu_resto.mp4" type="video/mp4" />
-            Maaf, browser Anda tidak mendukung pemutaran video.
-          </video>
-        </div>
-      </div>
-    </header>
+        <table class="promo-table">
+          <thead>
+            <tr>
+              <th>Promo</th>
+              <th>Isi Paket</th>
+              <th>Harga</th>
+              <th>Keuntungan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Paket Nostalgia</strong></td>
+              <td>Nasi Goreng + Es Teh Manis</td>
+              <td>Rp30.000</td>
+              <td>Hemat Rp3.000</td>
+            </tr>
+            <tr>
+              <td><strong>Paket Keluarga</strong></td>
+              <td>Ayam Bakar + Nasi + 2 Es Jeruk</td>
+              <td>Rp55.000</td>
+              <td>Hemat Rp10.000</td>
+            </tr>
+            <tr>
+              <td><strong>Jajan Manis</strong></td>
+              <td>Crepess + Es Krim Vanilla</td>
+              <td>Rp25.000</td>
+              <td>Hemat Rp5.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>Restoran Rongawi</h2>
-          <p>Jl. Merdeka No. 10, Jakarta, Indonesia</p>
-        </div>
-        <div class="footer-meta">
-          <p class="copyright">&copy; 2026 Restoran Rongawi.</p>
-          <p>Good Food, Good Times.</p>
-        </div>
-      </div>
+      <table class="footer-table">
+        <tr>
+          <td class="footer-brand">
+            <h2>Restoran Rongawi</h2>
+            <p>Jl. Merdeka No. 10, Jakarta, Indonesia</p>
+          </td>
+          <td class="footer-meta">
+            <p class="copyright">&copy; 2026 Restoran Rongawi.</p>
+            <p>Good Food, Good Times.</p>
+          </td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>

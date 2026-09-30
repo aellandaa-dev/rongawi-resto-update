@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <nav class="navbar">
       <div class="nav-brand">Rongawi</div>
@@ -24,125 +25,136 @@
       </ul>
     </nav>
 
-    <div class="container">
+    <main class="container">
       <section>
         <div class="section-header">
           <h2>Daftar Menu & Harga</h2>
           <p class="section-desc">Sajian klasik yang tak lekang oleh waktu.</p>
         </div>
 
-        <ul class="menu-grid">
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80"
-                alt="Nasi Goreng"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Nasi Goreng</h3>
-              <span class="price">Rp25.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=600&q=80"
-                alt="Mie Goreng"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Mie Goreng</h3>
-              <span class="price">Rp20.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?auto=format&fit=crop&w=600&q=80"
-                alt="Sate Ayam"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Sate Ayam</h3>
-              <span class="price">Rp30.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80"
-                alt="Ayam Bakar"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Ayam Bakar</h3>
-              <span class="price">Rp35.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80"
-                alt="Es Teh Manis"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Es Teh Manis</h3>
-              <span class="price">Rp8.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80"
-                alt="Es Jeruk Peras"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Es Jeruk Peras</h3>
-              <span class="price">Rp10.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80"
-                alt="Crepess"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Crepess</h3>
-              <span class="price">Rp15.000</span>
-            </div>
-          </li>
-          <li class="menu-card">
-            <div class="card-img-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=600&q=80"
-                alt="Es Krim"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Es Krim Vanilla</h3>
-              <span class="price">Rp15.000</span>
-            </div>
-          </li>
-        </ul>
+        <table class="menu-photo-table">
+          <thead>
+            <tr>
+              <th>Foto</th>
+              <th>Menu</th>
+              <th>Kategori</th>
+              <th>Harga</th>
+              <th>Status Promo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80" alt="Nasi Goreng"></td>
+              <td><strong>Nasi Goreng</strong></td>
+              <td>Makanan Utama</td>
+              <td>Rp25.000</td>
+              <td>Paket Nostalgia</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=600&q=80" alt="Mie Goreng"></td>
+              <td><strong>Mie Goreng</strong></td>
+              <td>Makanan Utama</td>
+              <td>Rp20.000</td>
+              <td>Menu Favorit</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?auto=format&fit=crop&w=600&q=80" alt="Sate Ayam"></td>
+              <td><strong>Sate Ayam</strong></td>
+              <td>Makanan Utama</td>
+              <td>Rp30.000</td>
+              <td>Menu Favorit</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" alt="Ayam Bakar"></td>
+              <td><strong>Ayam Bakar</strong></td>
+              <td>Makanan Utama</td>
+              <td>Rp35.000</td>
+              <td>Paket Keluarga</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" alt="Es Teh Manis"></td>
+              <td><strong>Es Teh Manis</strong></td>
+              <td>Minuman Segar</td>
+              <td>Rp8.000</td>
+              <td>Paket Nostalgia</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" alt="Es Jeruk Peras"></td>
+              <td><strong>Es Jeruk Peras</strong></td>
+              <td>Minuman Segar</td>
+              <td>Rp10.000</td>
+              <td>Paket Keluarga</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" alt="Crepess"></td>
+              <td><strong>Crepess</strong></td>
+              <td>Hidangan Penutup</td>
+              <td>Rp15.000</td>
+              <td>Jajan Manis</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=600&q=80" alt="Es Krim Vanilla"></td>
+              <td><strong>Es Krim Vanilla</strong></td>
+              <td>Hidangan Penutup</td>
+              <td>Rp15.000</td>
+              <td>Jajan Manis</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
-    </div>
+
+      <section class="promotion-section compact-promo">
+        <div class="section-header">
+          <h2>Promo Pilihan</h2>
+          <p class="section-desc">Cocok untuk makan sendiri, berdua, atau bersama keluarga.</p>
+        </div>
+
+        <table class="promo-table">
+          <thead>
+            <tr>
+              <th>Paket</th>
+              <th>Isi</th>
+              <th>Harga</th>
+              <th>Keuntungan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paket Nostalgia</td>
+              <td>Nasi Goreng + Es Teh Manis</td>
+              <td>Rp30.000</td>
+              <td>Hemat Rp3.000</td>
+            </tr>
+            <tr>
+              <td>Paket Keluarga</td>
+              <td>Ayam Bakar + Nasi + 2 Es Jeruk</td>
+              <td>Rp55.000</td>
+              <td>Hemat Rp10.000</td>
+            </tr>
+            <tr>
+              <td>Jajan Manis</td>
+              <td>Crepess + Es Krim Vanilla</td>
+              <td>Rp25.000</td>
+              <td>Hemat Rp5.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h2>Restoran Rongawi</h2>
-          <p>Jl. Merdeka No. 10, Jakarta, Indonesia</p>
-        </div>
-        <div class="footer-meta">
-          <p class="copyright">&copy; 2026 Restoran Rongawi.</p>
-          <p>Good Food, Good Times.</p>
-        </div>
-      </div>
+      <table class="footer-table">
+        <tr>
+          <td class="footer-brand">
+            <h2>Restoran Rongawi</h2>
+            <p>Jl. Merdeka No. 10, Jakarta, Indonesia</p>
+          </td>
+          <td class="footer-meta">
+            <p class="copyright">&copy; 2026 Restoran Rongawi.</p>
+            <p>Good Food, Good Times.</p>
+          </td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
