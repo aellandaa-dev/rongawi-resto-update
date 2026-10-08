@@ -30,6 +30,7 @@ body {
   background-size: 30px 30px;
 }
 
+/* Navigasi Utama */
 .navbar {
   background-color: var(--bg-main);
   border-bottom: 4px solid var(--border-color);
@@ -47,7 +48,9 @@ body {
   font-family: var(--font-heading);
   font-size: 2.2rem;
   color: var(--accent-red);
-  text-shadow: 2px 2px 0px var(--accent-yellow), 4px 4px 0px var(--border-color);
+  text-shadow:
+    2px 2px 0px var(--accent-yellow),
+    4px 4px 0px var(--border-color);
   letter-spacing: 1px;
 }
 
@@ -69,16 +72,19 @@ body {
   transition: all 0.2s ease;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover,
+.nav-links li a[aria-current="page"] {
   background-color: var(--accent-yellow);
   border: 2px solid var(--border-color);
   box-shadow: 3px 3px 0px var(--border-color);
 }
 
+/* Hero Section */
 .hero {
   position: relative;
   min-height: 80vh;
-  background: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80")
+    center/cover no-repeat;
   border-bottom: 4px solid var(--border-color);
   padding: 50px 5%;
 }
@@ -133,7 +139,9 @@ body {
   font-family: var(--font-heading);
   font-size: 4rem;
   color: var(--accent-teal);
-  text-shadow: 3px 3px 0px var(--accent-yellow), 5px 5px 0px var(--text-main);
+  text-shadow:
+    3px 3px 0px var(--accent-yellow),
+    5px 5px 0px var(--text-main);
   margin-bottom: 20px;
   line-height: 1.1;
 }
@@ -159,6 +167,7 @@ body {
   display: block;
 }
 
+/* Kontainer Utama */
 .container {
   max-width: 1200px;
   margin: 60px auto;
@@ -220,6 +229,7 @@ h2 {
   width: 65%;
 }
 
+/* Style Tabel */
 .category-table,
 .steps-table,
 .contact-table,
@@ -376,169 +386,7 @@ h2 {
   box-shadow: 6px 6px 0px var(--border-color);
 }
 
-footer {
-  background-color: var(--text-main);
-  color: var(--bg-main);
-  padding: 50px 5%;
-  border-top: 6px dashed var(--accent-yellow);
-}
-
-.footer-table {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
-.footer-table td {
-  vertical-align: middle;
-  padding: 10px 20px;
-}
-
-.footer-brand h2 {
-  color: var(--accent-yellow);
-  text-shadow: none;
-  font-size: 2.2rem;
-  margin-bottom: 5px;
-}
-
-.footer-meta {
-  text-align: right;
-  font-size: 1.1rem;
-}
-
-.footer-meta .copyright {
-  font-weight: 700;
-}
-
-@media (max-width: 992px) {
-  .hero {
-    min-height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero-table,
-  .split-table {
-    border-spacing: 0;
-  }
-
-  .hero-table,
-  .hero-table tbody,
-  .hero-table tr,
-  .hero-table td,
-  .split-table,
-  .split-table tbody,
-  .split-table tr,
-  .split-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .hero-table td,
-  .split-text-cell,
-  .split-content-cell {
-    margin-bottom: 35px;
-  }
-
-  .hero-table td:last-child,
-  .split-table td:last-child {
-    margin-bottom: 0;
-  }
-
-  .hero-content h1 {
-    font-size: 3rem;
-  }
-
-  .container {
-    margin: 45px auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .nav-links li a {
-    padding: 7px 10px;
-    font-size: 0.85rem;
-  }
-
-  .hero-content {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .section-header {
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .info-section,
-  .promotion-section {
-    padding: 30px 20px;
-  }
-
-  .category-table,
-  .steps-table,
-  .contact-table,
-  .menu-table,
-  .promo-table {
-    font-size: 0.9rem;
-  }
-
-  .category-table th,
-  .category-table td,
-  .steps-table th,
-  .steps-table td,
-  .contact-table th,
-  .contact-table td,
-  .menu-table th,
-  .menu-table td,
-  .promo-table th,
-  .promo-table td {
-    padding: 11px 9px;
-  }
-
-  .menu-table,
-  .promo-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .footer-table,
-  .footer-table tbody,
-  .footer-table tr,
-  .footer-table td {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer-meta {
-    margin-top: 20px;
-  }
-}
-
-
-/* Tabel daftar menu dengan foto asli */
+/* Tabel Foto Menu */
 .menu-photo-table {
   width: 100%;
   border-collapse: separate;
@@ -609,7 +457,358 @@ footer {
   white-space: nowrap;
 }
 
+/* Section & Form Pemesanan */
+.booking-section {
+  background: var(--accent-yellow);
+  padding: 40px;
+  border: 4px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 10px 10px 0 var(--border-color);
+}
+
+.booking-form {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group > label,
+.form-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background: #fffdf6;
+  font-size: 1rem;
+}
+
+.form-card {
+  background: var(--bg-main);
+  border: 3px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 22px 0;
+  box-shadow: 5px 5px 0 var(--border-color);
+}
+
+.menu-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.menu-option {
+  display: grid;
+  grid-template-columns: auto 1fr 95px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid #d8cba8;
+  border-radius: 8px;
+  background: white;
+}
+
+.menu-option input[type="number"] {
+  padding: 8px;
+  min-width: 0;
+}
+
+.menu-option label {
+  font-weight: 600;
+}
+
+.category-heading {
+  margin: 16px 0 10px;
+  color: var(--accent-red);
+  font-weight: 700;
+}
+
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.payment-option {
+  flex: 1 1 210px;
+  padding: 14px;
+  border: 2px solid #d8cba8;
+  border-radius: 10px;
+  background: white;
+}
+
+.payment-option label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.payment-logos {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0 0 26px;
+}
+
+.pay-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  height: 30px;
+  padding: 0 7px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  font:
+    700 12px Arial,
+    sans-serif;
+}
+
+.visa {
+  color: #173a8a;
+  font-style: italic;
+}
+
+.mastercard {
+  color: #d92727;
+}
+
+.ewallet {
+  font-size: 12px;
+  font-weight: 700;
+  color: #273b83;
+}
+
+.payment-detail {
+  margin-top: 15px;
+}
+
+.payment-detail[hidden] {
+  display: none;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.submit-button,
+.reset-button {
+  padding: 13px 24px;
+  border: 3px solid var(--border-color);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 var(--border-color);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.submit-button {
+  background: var(--accent-red);
+  color: white;
+}
+
+.reset-button {
+  background: white;
+  color: var(--text-main);
+}
+
+.submit-button:hover,
+.reset-button:hover {
+  transform: translateY(-2px);
+}
+
+.form-note {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--text-main);
+  color: var(--bg-main);
+  padding: 50px 5%;
+  border-top: 6px dashed var(--accent-yellow);
+}
+
+.footer-table {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.footer-table td {
+  vertical-align: middle;
+  padding: 10px 20px;
+}
+
+.footer-brand h2 {
+  color: var(--accent-yellow);
+  text-shadow: none;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.footer-meta {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.footer-meta .copyright {
+  font-weight: 700;
+}
+
+/* Tampilan Responsif */
+@media (max-width: 992px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-table,
+  .split-table {
+    border-spacing: 0;
+  }
+
+  .hero-table,
+  .hero-table tbody,
+  .hero-table tr,
+  .hero-table td,
+  .split-table,
+  .split-table tbody,
+  .split-table tr,
+  .split-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-table td,
+  .split-text-cell,
+  .split-content-cell {
+    margin-bottom: 35px;
+  }
+
+  .hero-table td:last-child,
+  .split-table td:last-child {
+    margin-bottom: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    margin: 45px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .booking-section {
+    padding: 24px 16px;
+  }
+
+  .form-grid,
+  .menu-options {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-option {
+    grid-template-columns: auto 1fr 82px;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-links li a {
+    padding: 7px 10px;
+    font-size: 0.85rem;
+  }
+
+  .hero-content {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .info-section,
+  .promotion-section {
+    padding: 30px 20px;
+  }
+
+  .category-table,
+  .steps-table,
+  .contact-table,
+  .menu-table,
+  .promo-table {
+    font-size: 0.9rem;
+  }
+
+  .category-table th,
+  .category-table td,
+  .steps-table th,
+  .steps-table td,
+  .contact-table th,
+  .contact-table td,
+  .menu-table th,
+  .menu-table td,
+  .promo-table th,
+  .promo-table td {
+    padding: 11px 9px;
+  }
+
+  .menu-table,
+  .promo-table,
   .menu-photo-table {
     display: block;
     overflow-x: auto;
@@ -619,5 +818,18 @@ footer {
   .menu-photo-table td:first-child img {
     width: 120px;
     height: 90px;
+  }
+
+  .footer-table,
+  .footer-table tbody,
+  .footer-table tr,
+  .footer-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-meta {
+    margin-top: 20px;
   }
 }
